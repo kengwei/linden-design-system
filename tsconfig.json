@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@linden/icons": ["./foundations/assets/Icons.ts"]
+    },
+    "allowImportingTsExtensions": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["node", "vitest/globals"]
+  },
+  "include": [
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "contracts/**/*.ts",
+    "foundations/**/*.ts",
+    "generators/**/*.ts",
+    "tooling/**/*.ts",
+    "tooling/**/*.tsx",
+    "system.config.ts"
+  ],
+  "exclude": ["node_modules", "storybook-static"]
+}

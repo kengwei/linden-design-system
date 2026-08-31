@@ -1,0 +1,9 @@
+node_modules/
+storybook-static/
+.DS_Store
+.impeccable/
+
+# Private workspace metadata
+.scratch/
+.agents/
+.codex/

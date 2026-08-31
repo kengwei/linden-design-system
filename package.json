@@ -1,0 +1,40 @@
+{
+  "name": "linden-design-system",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.23.0",
+  "scripts": {
+    "generate": "node generators/generate.ts",
+    "generate:check": "node generators/generate.ts --check",
+    "test:contracts": "node --test contracts/contracts.test.ts",
+    "test:unit": "vitest run",
+    "test": "pnpm run test:contracts && pnpm run generate:check && pnpm run test:unit",
+    "typecheck": "tsc --noEmit",
+    "storybook": "storybook dev --config-dir tooling/storybook/.storybook -p 6006",
+    "build-storybook": "storybook build --config-dir tooling/storybook/.storybook -o storybook-static",
+    "validate": "pnpm run typecheck && pnpm test && pnpm run build-storybook"
+  },
+  "dependencies": {
+    "lucide-react": "0.563.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "10.5.10",
+    "@storybook/react-vite": "10.5.10",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.2",
+    "@testing-library/user-event": "14.6.6",
+    "@types/node": "22.20.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "axe-core": "4.13.0",
+    "jsdom": "30.0.1",
+    "storybook": "10.5.10",
+    "typescript": "7.0.2",
+    "vite": "8.2.2",
+    "vitest": "4.1.11"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/kengwei/linden-design-system"
+}
