@@ -4,6 +4,8 @@
 
 We are building Linden around a simple idea: a design system should have one reviewed definition of what each capability means. Figma and code express that definition; neither owns it.
 
+![Conceptual Linden DS architecture showing a contract-driven core branching into generation, validation, and integration pathways](./assets/linden-ds-contract-architecture.png)
+
 ## The Problem
 
 Design systems live in many places: Figma libraries, application code, tokens, documentation, Storybook, accessibility guidance, and platform-specific implementations. Over time, each representation can become its own source of truth.
