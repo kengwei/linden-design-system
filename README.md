@@ -67,6 +67,9 @@ pnpm install --frozen-lockfile
 pnpm run validate
 ```
 
+- `pnpm install --frozen-lockfile` installs the exact dependency versions recorded in `pnpm-lock.yaml`. It stops if the package manifest and lockfile disagree instead of silently changing the dependency graph.
+- `pnpm run validate` runs the public release checks: TypeScript type checking, contract tests, generated-artifact parity, runtime and accessibility tests, and a production Storybook build.
+
 ## Public Boundary
 
 This public repository excludes private Figma operations, signed evidence, workflow metadata, personal identity metadata, and portfolio materials.
